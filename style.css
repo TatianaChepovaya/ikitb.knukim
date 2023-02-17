@@ -1011,17 +1011,24 @@ img {
     font-size: 48px;
     line-height: 1.2;
   }
+  .banner-order__container {
+    position: relative;
+  }
   .banner-order {
     position: relative;
     height: 375px;
     z-index: -20;
   }
   .banner-order__img {
+    display: none;
     position: absolute;
     width: 993px;
     top: 0;
     right: 0;
     z-index: -2;
+  }
+  .form-communication-left-part .banner-order__img {
+    display: block;
   }
   .advantages__left-part .section__title {
     margin-bottom: 35px;
