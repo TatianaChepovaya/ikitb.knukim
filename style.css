@@ -385,11 +385,7 @@ img {
   width: 100%;
   max-width: 993px;
 }
-.advantages {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-}
+
 .advantages__container {
   padding-top: 56px;
   padding-bottom: 66px;
@@ -446,7 +442,11 @@ img {
 .advantages__right-part p {
   color: var(--main-black-color);
 }
+.statistics__container {
+  padding-bottom: 30px;
+}
 .statistics__list {
+  background-color: var(--main-light-color);
   padding: 30px 62px 77px 62px;
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
   border-radius: 0px 0px 15px 15px;
@@ -467,6 +467,10 @@ img {
   display: block;
   text-align: center;
   color: var(--main-gray-color);
+}
+.administration__container {
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
 .administration__wrap .section__title {
   color: var(--main-light-color);
@@ -497,6 +501,19 @@ img {
 .arrow__btn img {
   width: 13px;
   height: 13px;
+}
+.administration {
+  position: relative;
+}
+.administration__lining {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  height: 436px;
+  z-index: -1;
+  top: -80px;
 }
 .administration__list li {
   width: 313px;
@@ -532,6 +549,9 @@ img {
   line-height: 1.21;
   color: var(--main-black-color);
 }
+.news__container {
+  padding-bottom: 60px;
+}
 .news__wrap .section__title {
   margin-bottom: 34px;
 }
@@ -539,6 +559,9 @@ img {
   padding-top: 28px;
   padding-bottom: 22px;
   padding-right: 40px;
+}
+.news__list li {
+  margin: 0 auto 28px auto;
 }
 .news__list p {
   font-weight: 400;
@@ -764,9 +787,6 @@ img {
     padding-top: 85px;
     padding-bottom: 60px;
   }
-  .statistics__list li {
-    width: 33%;
-  }
 }
 @media screen and (min-width: 612px) {
   .header__phone ul {
@@ -799,6 +819,35 @@ img {
   .hero p {
     width: 52%;
   }
+  .statistics__container {
+    padding-bottom: 100px;
+  }
+  .statistics__list li {
+    margin-bottom: 0;
+  }
+  .administration__container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .administration__lining {
+    height: 604px;
+    top: -220px;
+  }
+  .administration__wrap,
+  .news__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .administration__wrap .section__title,
+  .news__wrap .section__title {
+    margin-bottom: 0;
+  }
+  .btn__list {
+    margin-bottom: 0;
+  }
   .administration__list {
     display: flex;
     flex-wrap: wrap;
@@ -809,8 +858,16 @@ img {
   }
 }
 @media screen and (min-width: 727px) {
-  .speciality__container li {
+  .speciality__container li,
+  .news__list li {
     flex-basis: calc((100% - 2 * 21px) / 2);
+  }
+  .news__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news__list li {
+    margin-left: 21px;
   }
 }
 @media screen and (min-width: 749px) {
@@ -839,9 +896,6 @@ img {
   .advantages__left-part,
   .advantages__right-part {
     width: 44%;
-  }
-  .statistics__list li {
-    width: 24%;
   }
   .form-communication {
     padding-top: 80px;
@@ -932,7 +986,8 @@ img {
   .speciality__container {
     padding-bottom: 93px;
   }
-  .speciality__container li {
+  .speciality__container li,
+  .news__list li {
     flex-basis: calc((100% - 3 * 21px) / 3);
   }
   .section__title {
@@ -949,9 +1004,6 @@ img {
   }
   .statistics__list {
     padding: 85px 94px 60px 94px;
-  }
-  .statistics__list li {
-    width: 20%;
   }
   .news__container {
     margin-bottom: -283px;
