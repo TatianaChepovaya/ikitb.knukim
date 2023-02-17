@@ -381,11 +381,19 @@ img {
 .banner-order {
   background-color: var(--main-blue-color);
 }
+.banner-order__container {
+  padding-top: 66px;
+}
 .banner-order__right-part img {
   width: 100%;
   max-width: 993px;
 }
-
+.banner-order__img {
+  height: 216px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .advantages__container {
   padding-top: 56px;
   padding-bottom: 66px;
@@ -770,6 +778,15 @@ img {
     width: 58%;
   }
 }
+@media screen and (min-width: 550px) {
+  .banner-order .main__btn {
+    margin-bottom: 65px;
+  }
+  .banner-order__img {
+    height: 375px;
+    background-size: cover;
+  }
+}
 
 @media screen and (min-width: 592px) {
   .header__nav-menu-right.active {
@@ -993,6 +1010,18 @@ img {
   .section__title {
     font-size: 48px;
     line-height: 1.2;
+  }
+  .banner-order {
+    position: relative;
+    height: 375px;
+    z-index: -20;
+  }
+  .banner-order__img {
+    position: absolute;
+    width: 993px;
+    top: 0;
+    right: 0;
+    z-index: -2;
   }
   .advantages__left-part .section__title {
     margin-bottom: 35px;
