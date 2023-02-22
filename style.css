@@ -1085,7 +1085,86 @@ img {
 .entry__right-part {
   margin-bottom: 52px;
 }
+.content__container{
+  padding-bottom: 40px;
+}
+.content__container:last-child{
+  padding-bottom: 0;
+}
+.content__container h2{
+  font-weight: 500;
+font-size: 28px;
+line-height: 1.07;
+color: var(--main-blue-color);
+margin-bottom: 30px;
+}
+.content__container span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 77px;
+  height: 77px;
+  background-color: var(--main-gold-color);
+  border-radius: 50%;
+  font-weight: 500;
+font-size: 40px;
+color: #023D78;
+margin-right: 16px;
+}
+.trade__list li{
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+color: var(--main-black-color);
+margin-bottom: 29px;
+}
+.trade__list li:last-child{
 
+margin-bottom: 0;
+}
+.content__container p{
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.33;
+color: var(--main-black-color);
+}
+.content__container--color p{
+  color: var(--main-gray-color);
+}
+.content__container .advantages__right-part{
+  width: 100% ;
+}
+.contact__container--margin p{
+  margin-bottom: 21px;
+}
+.skill__list{
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 34px;
+}
+.skill__list li{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--main-gray-color);
+}
+.download__btn{
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color:  #828282;
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+.download__btn img{
+  width: 39px;
+  height: 39px;
+  margin-right: 14px;
+}
 @media screen and (min-width: 469px) {
   .hero p {
     width: 58%;
@@ -1465,6 +1544,50 @@ img {
   .entry__left-part,
   .entry__right-part {
     width: 46%;
+  }
+  .content__container{
+    padding-bottom: 65px;
+  }
+  .content__container h2{
+  font-size: 38px;
+  line-height: 1.13;
+  margin-bottom: 40px;
+  }
+  .content__container p{
+  font-size: 16px;
+  line-height: 1.62;
+  }
+  .trade__list{
+    display: flex;
+  justify-content: space-between;
+  }
+  .trade__list li:first-child{
+    margin-bottom: 0;
+  }
+  .entry__btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .entry__btn-container .tutorial__btn{
+    margin-bottom: 0;
+  }
+  .content__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 84px;
+  }
+  .content__text{
+    width: 50%;
+  }
+  .content__text h2{
+    margin-bottom: 8px;
+  }
+  .download__btn{
+    width: 26%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1100px) {
