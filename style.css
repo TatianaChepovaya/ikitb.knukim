@@ -1222,7 +1222,6 @@ img {
 .base__text strong,
 .creativecontest h2 {
   font-weight: 500;
-
   line-height: 1.25;
   color: var(--main-blue-color);
 }
@@ -1660,6 +1659,9 @@ img {
   }
   .form-communication__wrap {
     padding-left: 92px;
+  }
+  .form-communication-left-part p{
+    font-size: 45px;
   }
   .heading {
     height: 323px;
