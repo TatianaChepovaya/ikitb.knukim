@@ -418,7 +418,8 @@ img {
   display: block;
   transform: translateY(0);
 }
-.overlay img {
+.overlay img,
+.creativecontest .speciality__list .overlay img {
   width: 56px;
   height: 56px;
   margin-bottom: 29px;
@@ -1258,10 +1259,8 @@ img {
   height: 127px;
   object-fit: cover;
 }
-.creativecontest .overlay img {
-  width: 56px;
-  height: 56px;
-}
+
+
 .creativecontest__list li:nth-child(15) {
   margin-bottom: 40px;
 }
@@ -1316,6 +1315,7 @@ img {
 .conference__list.speciality__list .title__secondary{
   margin-bottom: 33px;
 }
+
 @media screen and (min-width: 469px) {
   .hero p {
     width: 58%;
@@ -1638,7 +1638,12 @@ img {
   .content__container p,
   .renewal__wrap p,
   .renewal__text,
-  .heading__container p {
+  .heading__container p,
+  .creativecontest p,
+  .creativecontest__list li,
+  .base__text p,
+  .base__text li
+   {
     font-size: 16px;
     line-height: 1.62;
   }
@@ -1718,8 +1723,7 @@ img {
   .form__container {
     margin-bottom: -285px;
   }
-}
-@media screen and (min-width: 1024px) {
+
   .tutorial__img {
     background-size: contain;
   }
@@ -1809,7 +1813,7 @@ img {
   }
   .trade .trade__list {
     flex-wrap: wrap;
-    width: 33%;
+    width: 36%;
   }
   .trade .trade__list li:last-child {
     margin-top: 28px;
@@ -1829,6 +1833,26 @@ img {
   }
   .document__right-part {
     width: 58%;
+  }
+  .creativecontest__list{
+    column-count: 2;
+    margin-bottom: 101px;
+  }
+  .creativecontest__list li:nth-child(15){
+    margin-bottom: 0;
+  }
+  .trade__text,
+  .base__text strong{
+font-size: 18px;
+line-height: 1.38;
+  }
+  .creativecontest h2{
+    font-size: 38px;
+line-height: 1.13;
+  }
+  .trade__list li{
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
 @media screen and (min-width: 1100px) {
