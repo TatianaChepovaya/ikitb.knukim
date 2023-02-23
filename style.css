@@ -1220,7 +1220,8 @@ img {
 }
 .trade__text,
 .base__text strong,
-.creativecontest h2 {
+.creativecontest h2,
+.document h2 {
   font-weight: 500;
   line-height: 1.25;
   color: var(--main-blue-color);
@@ -1229,7 +1230,8 @@ img {
 .base__text strong {
   font-size: 16px;
 }
-.creativecontest h2 {
+.creativecontest h2,
+.document h2 {
   font-size: 26px;
   margin-bottom: 27px;
 }
@@ -1271,6 +1273,36 @@ img {
 }
 .creativecontest .administration__container{
   padding-bottom: 0;
+}
+.document__left-part{
+  padding-bottom: 31px;
+}
+
+.document__left-part li{ display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+font-size: 16px;
+color: #828282;
+border-top: 1px solid #B8B8B8;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.document__left-part li:last-child{
+  border-bottom: 1px solid #B8B8B8;
+}
+.document__left-part li.active{
+  color: var(--main-blue-color);
+}
+.document__left-part li.active::after 
+{
+  content: url(./images/arrow-list.svg);
+  display: block;
+  width: 6px;
+  height: 6px;
+
+}
+.document__right-part img{
+  width: 100%;
 }
 @media screen and (min-width: 469px) {
   .hero p {
@@ -1772,6 +1804,19 @@ img {
   }
   .trade .trade__list li:first-child{
     margin-top: 0;
+   }
+   .document{
+    display: flex;
+    justify-content: space-between;
+   }
+   .document__left-part{
+    width: 35%;
+   }
+   .document__left-part li{
+    font-size: 20px;
+   }
+   .document__right-part{
+    width: 58%;
    }
 }
 @media screen and (min-width: 1100px) {
