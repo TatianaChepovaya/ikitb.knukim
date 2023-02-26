@@ -491,7 +491,7 @@ img {
 .advantages__left-part p,
 .advantages__right-part p,
 .form-communication-left-part span,
-.footer__container span {
+.footer__container li {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
@@ -784,6 +784,9 @@ img {
 .footer__container {
   margin-bottom: 50px;
 }
+.footer__container:last-child{
+  margin-bottom: 0;
+}
 .footer__container li,
 .contact__list li {
   margin-bottom: 20px;
@@ -791,26 +794,37 @@ img {
 .footer__container li:last-child {
   margin-bottom: 25px;
 }
-.footer__container a,
+.footer__container li,
 .contact__list a {
   display: flex;
 }
-.footer__container span {
-  display: flex;
+.footer__container li {
   color: var(--main-light-color);
 }
-.footer__container span::before,
+.footer__container span{
+  display: flex;
+}
+.contact__icon{
+  display: flex;
+}
+.contact__icon::after,
 .contact__list span::before {
   content: '';
   display: flex;
-  width: 1px;
+  border-right: 1px solid;
   background-color: #b8b8b8;
   margin-right: 19px;
 }
-.footer__container span::before {
+.contact__icon::after {
   height: 18px;
 }
-.footer__container img,
+.contact__number{
+  width: 358px;
+}
+.contact__number a{
+  white-space: nowrap;
+}
+.contact__icon img,
 .contact__list img {
   width: 18px;
   height: 18px;
@@ -825,6 +839,7 @@ img {
   margin-right: 13px;
 }
 .map__btn {
+  display: flex;
   align-items: center;
   font-weight: 400;
   font-size: 14px;
@@ -1628,18 +1643,29 @@ height: 40px;
   .form-communication__wrap {
     padding: 53px 70px 72px 50px;
   }
-  .footer__wrap {
-    zoom: 0.85;
+  .footer__wrap,
+  .footer__bottom-container {
+    zoom: 0.8;
   }
-  .footer__container span {
+  .footer__container{
+    margin-bottom: 0;
+  }
+  .footer__container li {
     font-size: 14px;
   }
+  .footer__container ul{
+    min-height: 170px;
+  }
+ .footer__social-list{
+  margin-bottom: 0;
+ }
   .footer__bottom-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
+
   .copyright,
   .developer {
     margin-top: 0;
@@ -1763,7 +1789,8 @@ color: var(--main-blue-color);
   .form-communication-right-part {
     max-width: 506px;
   }
-  .footer__wrap {
+  .footer__wrap,
+  .footer__bottom-container {
     zoom: 1;
   }
 }
