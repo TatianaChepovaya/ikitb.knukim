@@ -184,12 +184,10 @@ img {
   border: 0;
 }
 .btn__white {
-  width: 180px;
   background-color: var(--main-light-color);
   color: var(--main-blue-color);
 }
 .btn__blue {
-  width: 180px;
   color: var(--main-light-color);
   background-color: var(--main-blue-color);
 }
@@ -340,6 +338,12 @@ img {
   margin-bottom: 26px;
   width: 77%;
 }
+.hero__container .main__btn,
+.form__container .main__btn,
+.entry__btn-container .main__btn{
+  width: 214px;
+  height: 50px;
+}
 .speciality__container {
   padding-bottom: 57px;
 }
@@ -434,8 +438,16 @@ img {
   opacity: 0.6;
   margin-bottom: 45px;
 }
+.overlay .main__btn,
+.news__container .main__btn,
+.speciality__info .main__btn,
+.video__list .main__btn,
+.news__info .main__btn{
+  width: 173px;
+  height: 40px;
+}
 .banner-order {
-  background-color: var(--main-blue-color);
+  background-color: #003c79;
 }
 .banner-order__container {
   padding-top: 66px;
@@ -452,6 +464,12 @@ img {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.banner-order__container .main__btn,
+.form-communication-right-part .main__btn,
+.tutorial__right-part .main__btn{
+  width: 194px;
+  height: 40px;
 }
 .advantages__container {
   padding-top: 56px;
@@ -1584,6 +1602,9 @@ height: 40px;
   .header__nav-menu-right-open.active {
     margin-top: 0;
   }
+  .menu__btn .open{
+    width: 146px;
+  }
   .menu__list {
     display: flex;
     justify-content: space-between;
@@ -1901,7 +1922,7 @@ color: var(--main-blue-color);
   }
   .entry__left-part,
   .entry__right-part {
-    width: 46%;
+    width: 47%;
   }
   .content__container {
     padding-bottom: 65px;
@@ -1922,7 +1943,7 @@ color: var(--main-blue-color);
   .entry__btn-container {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: end;
   }
   .entry__btn-container .tutorial__btn {
     margin-bottom: 0;
